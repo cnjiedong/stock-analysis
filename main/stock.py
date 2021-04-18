@@ -1,3 +1,8 @@
-for i in range(0,10) :
+for i in range(0,2) :
     print(i)
-    print(i+1)
+
+def func1(i) :
+    print("this is %d" %i)
+    return i+2
+
+print(func1(1))
