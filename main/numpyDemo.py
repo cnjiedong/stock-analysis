@@ -7,4 +7,4 @@ print(url)              # 打印出要爬取的url
 response = urllib.request.urlopen(url)
 # 由于返回结果中有中文，因此要用gbk解码
 print(response.read().decode("gbk"))
-response.close();       # 关闭对象
+response.close();       # 关闭对象s

@@ -1,9 +1,11 @@
+# coding=utf-8
 import psycopg2
 
 #创建连接对象
 print("this this pgsql test")
 conn=psycopg2.connect(database="trade",user="jiedong",password="ljd_yz2019",host="49.234.17.178",port="5432")
-cur=conn.cursor() #创建指针对象
+cur=conn.cursor() 
+#创建指针对象
  
 # 创建表
 # cur.execute("CREATE TABLE student(id integer,name varchar,sex varchar);")
@@ -17,6 +19,7 @@ cur=conn.cursor() #创建指针对象
 cur.execute('SELECT * FROM student')
 results=cur.fetchall()
 print (results)
+
  
 # 关闭练级
 conn.commit()
